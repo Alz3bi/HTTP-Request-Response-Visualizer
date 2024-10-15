@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Request Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTTP Request/Response Visualizer</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL (e.g., https://m-alzoubi.me/)" />
+        <button id="sendRequestBtn">Send Request</button>
+
+        <div id="responseContainer">
+            <h2>Response</h2>
+            <p><strong>Status Code:</strong> <span id="statusCode"></span></p>
+            <p><strong>Headers:</strong></p>
+            <pre id="headers"></pre>
+            <p><strong>Body:</strong></p>
+            <pre id="responseBody"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
