@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -20,6 +24,12 @@ input {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+#methodSelect {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
 }
 
 button {
