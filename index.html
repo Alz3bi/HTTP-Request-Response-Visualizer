@@ -10,9 +10,17 @@
     <div class="container">
         <h1>HTTP Request/Response Visualizer</h1>
         <input type="text" id="urlInput" placeholder="Enter URL (e.g., https://m-alzoubi.me/)" />
+        <select id="methodSelect">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+        
         <button id="sendRequestBtn">Send Request</button>
 
         <div id="responseContainer">
+            <p id="loading" style="display: none;">Loading...</p>
             <h2>Response</h2>
             <p><strong>Status Code:</strong> <span id="statusCode"></span></p>
             <p><strong>Headers:</strong></p>
